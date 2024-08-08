@@ -25,7 +25,10 @@ const News = (props) => {
         const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
         let url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page}&pageSize=${props.pageSize}`;
         props.setProgress(25);
-        let data = await fetch(url);
+        try{
+
+            let data = await fetch(url);
+        }catch(e){ console.log(e)};
         props.setProgress(50);
         let parsedData = await data.json();
         props.setProgress(75);
