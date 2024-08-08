@@ -22,7 +22,7 @@ const News = (props) => {
         setLoading(true);
         props.setProgress(0);
         const apiKey = process.env.REACT_APP_API_KEY;
-        const proxy = 'https://cors-anywhere.herokuapp.com/'; // Use if needed
+        const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
         let url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page}&pageSize=${props.pageSize}`;
         props.setProgress(25);
         let data = await fetch(url);
@@ -39,7 +39,7 @@ const News = (props) => {
 
     const fetchMoreData = async () => {
         const apiKey = process.env.REACT_APP_API_KEY;
-        const proxy = 'https://cors-anywhere.herokuapp.com/'; // Use if needed
+        const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
         let url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
         setPage(page + 1);
         let data = await fetch(url);
