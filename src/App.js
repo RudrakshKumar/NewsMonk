@@ -29,7 +29,7 @@ const handleRefetch = () => {
           />
           <Routes>
 
-            <Route path='/' element={<News setProgress={setProgress} key={GenKey} pageSize={pageSize} category='general'/>} />
+            <Route path='/' element={<News setProgress={setProgress} key={GenKey} pageSize={pageSize} category='top'/>} />
             <Route path='/business' element={<News setProgress={setProgress} key='business' pageSize={pageSize} category='business'/>} />
             <Route path='/entertainment' element={<News setProgress={setProgress} key='entertainment' pageSize={pageSize} category='entertainment'/>} />
             <Route path='/health' element={<News setProgress={setProgress} key='health' pageSize={pageSize} category='health'/>} />

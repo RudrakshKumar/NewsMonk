@@ -22,15 +22,16 @@ const News = (props) => {
         setLoading(true);
         props.setProgress(0);
         const apiKey = process.env.REACT_APP_API_KEY;
+        console.log(apiKey);
         // const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
-        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page}&pageSize=${props.pageSize}`;
+        let url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&language=en&category=${props.category}`;
         props.setProgress(25);
         let data = await fetch(url);
         props.setProgress(50);
         let parsedData = await data.json();
         props.setProgress(75);
-        setArticles(parsedData.articles);
-        console.log(articles);
+        setPage(parsedData.nextPage);
+        setArticles(parsedData.results);
         setTotalResults(parsedData.totalResults);
         props.setProgress(100);
         setLoading(false);
@@ -41,12 +42,13 @@ const News = (props) => {
     const fetchMoreData = async () => {
         const apiKey = process.env.REACT_APP_API_KEY;
         // const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
-        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
-        setPage(page + 1);
+        let url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&language=en&category=${props.category}&page=${page}`;
+        console.log(url);
         let data = await fetch(url);
         let parsedData = await data.json();
+        setPage(parsedData.nextPage);
         setTimeout(() => {
-            setArticles(articles.concat(parsedData.articles));
+            setArticles(articles.concat(parsedData.results));
         }, 500);
     };
 
@@ -64,27 +66,27 @@ const News = (props) => {
                 <InfiniteScroll
                     dataLength={articles.length}
                     next={fetchMoreData}
-                    hasMore={articles.length < totalResults - 10}
+                    hasMore={articles.length < totalResults - 5}
                     loader={<Spinner />}
                 >
                     <div className='container' style={spinnerStyle}>{loading && <Spinner />}</div>
                     <div className='container'>
                         <div className='row'>
                             {articles.map((element) => {
-                                if (element.url !== "https://removed.com") {
+                                // if (element.url !== "https://removed.com") {
                                     return (
                                         <div className='col-md-4' key={element.url}>
                                             <NewsItem
                                                 title={element.title ? element.title.slice(0, 80) : ""}
-                                                imgurl={element.urlToImage ? element.urlToImage : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8rRXu_m5FAcZWKEyLzHBYM8KFuUfwKuLEw&s"}
-                                                newsUrl={element.url}
-                                                author={element.author}
-                                                time={element.publishedAt}
-                                                NewsAgency={element.source.name}
+                                                imgurl={element.image_url ? element.image_url : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8rRXu_m5FAcZWKEyLzHBYM8KFuUfwKuLEw&s"}
+                                                newsUrl={element.link}
+                                                author={element.creator}
+                                                time={element.pubDate}
+                                                NewsAgency={element.source_name}
                                             />
                                         </div>
                                     );
-                                }
+                                // }
                                 return null;
                             })}
                         </div>
