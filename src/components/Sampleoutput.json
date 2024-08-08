@@ -1,0 +1,265 @@
+{    "status": "ok",
+    "totalResults": 62,
+    "articles": [
+      {
+        "source": {
+          "id": "fox-news",
+          "name": "Fox News"
+        },
+        "author": null,
+        "title": "WATCH LIVE: Vance holds campaign rally in Henderson, NV | Fox News Video",
+        "description": "Trump's VP pick rallies voters in Nevada as former president reportedly eyes contenders for other coveted spot.",
+        "url": "https://www.foxnews.com/video/6359636095112",
+        "urlToImage": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/614f5ea9-94bd-4361-8f82-78d1954d00fe/cf2f2aaf-b7c2-4b0b-9dc8-6b87a50f15c5/1280x720/match/1024/512/image.jpg?ve=1&tl=1",
+        "publishedAt": "2024-07-30T20:07:19.475648Z",
+        "content": "©2024 FOX News Network, LLC. All rights reserved. This material may not be published, broadcast, rewritten, or redistributed. All market data delayed 20 minutes."
+      },
+      {
+        "source": {
+          "id": "the-hill",
+          "name": "The Hill"
+        },
+        "author": "Alex Gangitano",
+        "title": "Harris says she hasn’t chosen her running mate yet, but is expected to travel with them next week",
+        "description": "Vice President Harris said on Tuesday that she hasn’t yet chosen her running mate for the 2024 presidential ticket. When reporters asked if she had made her selection, the presumptive Democratic nominee responded, “Not yet.” Harris and her running mate pick a…",
+        "url": "https://thehill.com/homenews/campaign/4800961-kamala-harris-vp-pick-battleground-states/",
+        "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/07/GettyImages-2162789084_ace5fd-e1722363306889.jpg?w=1280",
+        "publishedAt": "2024-07-30T19:36:59Z",
+        "content": "Skip to content\r\nVice President Harris said on Tuesday that she hasn’t yet chosen her running mate for the 2024 presidential ticket.\r\nWhen reporters asked if she had made her selection, the presumpti… [+1053 chars]"
+      },
+      {
+        "source": {
+          "id": "fox-news",
+          "name": "Fox News"
+        },
+        "author": "Brianna Herlihy",
+        "title": "Project 2025 leader steps down amid criticism from Trump",
+        "description": "The leader of the Heritage Foundation's Project 2025 has stepped down amid unrelenting criticism of the program from former President Trump.",
+        "url": "https://www.foxnews.com/politics/project-2025-leader-steps-down-amid-criticism-from-trump",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2023/04/GettyImages-1482271182-1.jpg",
+        "publishedAt": "2024-07-30T19:24:05Z",
+        "content": "The leader of the Heritage Foundation's Project 2025 has stepped down amid unrelenting criticism of the program from former President Trump and Democrats' continued efforts to link Trump's campaign t… [+2562 chars]"
+      },
+      {
+        "source": {
+          "id": "cnn-es",
+          "name": "CNN Spanish"
+        },
+        "author": "CNN",
+        "title": "Manifestantes en Venezuela derriban estatuas de Hugo Chávez durante las protestas",
+        "description": "Varios videos publicados en redes sociales muestran a manifestantes derribando estatuas del fallecido presidente Hugo Chávez",
+        "url": "https://cnnespanol.cnn.com/video/hugo-chavez-estatua-protesta-manifestantes-orix/",
+        "urlToImage": "https://cnnespanol.cnn.com/wp-content/uploads/2024/07/thumb6-20240730182223091.jpg?quality=100&strip=info",
+        "publishedAt": "2024-07-30T19:19:59Z",
+        "content": "Varios videos publicados en redes sociales muestran a manifestantes derribando estatuas del fallecido presidente Hugo Chávez en diferentes ciudades de Venezuela. Las reacciones de los venezolanos se … [+358 chars]"
+      },
+      {
+        "source": {
+          "id": "fox-news",
+          "name": "Fox News"
+        },
+        "author": "Paul Steinhauser",
+        "title": "VP Kamala Harris could name one of these 5 Democrats as her running mate",
+        "description": "Vice President Kamala Harris' choice for running mate on the Democratic Party's 2024 ticket could come in days. Here's a look at the top five contenders.",
+        "url": "https://www.foxnews.com/politics/vp-kamala-harris-could-name-one-5-democrats-her-running-mate",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2024/07/KAMALA-HARRIS.jpg",
+        "publishedAt": "2024-07-30T19:13:16Z",
+        "content": "Vice President Kamala Harris could name her running mate as soon as later this week or next week.\r\nHarris quickly coalesced Democratic Party support in the two days after President Biden's blockbuste… [+5545 chars]"
+      },
+      {
+        "source": {
+          "id": "the-hill",
+          "name": "The Hill"
+        },
+        "author": "Emily Brooks",
+        "title": "Project 2025 director steps down amid Trump campaign criticism",
+        "description": "The director of the Heritage Foundation-led Project 2025, Paul Dans, is departing from the role, the conservative think tank’s president Kevin Roberts said Tuesday. “When we began Project 2025 in April 2022, we set a timeline for the project to conclude its p…",
+        "url": "https://thehill.com/homenews/house/4800942-project-2025-director-departs/",
+        "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/07/Heritage_070624_Photo_Getty.png?w=1280",
+        "publishedAt": "2024-07-30T19:09:19Z",
+        "content": "Skip to content\r\nThe director of the Heritage Foundation-led Project 2025, Paul Dans, is departing from the role, the conservative think tank’s president Kevin Roberts said Tuesday.\r\n“When we began P… [+3018 chars]"
+      },
+      {
+        "source": {
+          "id": "the-hill",
+          "name": "The Hill"
+        },
+        "author": "Julia Mueller",
+        "title": "Walz’s star rising in Harris veepstakes with attacks on Trump, Vance",
+        "description": "Minnesota Gov. Tim Walz (D) has seen his national profile skyrocket as he becomes one of his party’s most vocal critics of the GOP in the wake of the presidential race’s shake-up. Walz, who leads a blue-leaning state that former President Trump hopes to flip …",
+        "url": "https://thehill.com/homenews/campaign/4800753-minnesota-tim-walz-harris-vp-contender/",
+        "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/06/AP22313696482452-e1722362874958.jpg?w=1280",
+        "publishedAt": "2024-07-30T18:40:56Z",
+        "content": "Skip to content\r\nMinnesota Gov. Tim Walz (D) has seen his national profile skyrocket as he becomes one of his party’s most vocal critics of the GOP in the wake of the presidential race’s shake-up.\r\nW… [+4750 chars]"
+      },
+      {
+        "source": {
+          "id": "the-wall-street-journal",
+          "name": "The Wall Street Journal"
+        },
+        "author": "Andrew Restuccia",
+        "title": "Project 2025 Director Paul Dans Steps Down Following Trump Criticism",
+        "description": "The group had set an agenda for a second Trump term but was criticized by the former president",
+        "url": "https://www.wsj.com/politics/elections/project-2025-head-steps-down-89cba52b?mod=hp_lead_pos3",
+        "urlToImage": "https://images.wsj.net/im-985810/social",
+        "publishedAt": "2024-07-30T18:24:00Z",
+        "content": "WASHINGTONThe Heritage Foundation official who leads Project 2025, the conservative roadmap for the next Republican administration, is stepping down after former President \r\nDonald Trump and his aide… [+408 chars]"
+      },
+      {
+        "source": {
+          "id": "nbc-news",
+          "name": "NBC News"
+        },
+        "author": "Sakshi Venkatraman",
+        "title": "Trump's campaign works to convince voters that Harris is 'crazy' because of her laugh",
+        "description": "Vice President Kamala Harris has been criticized for her race, gender and parental status, but the latest target from her opponent Trump and others is her laugh.",
+        "url": "https://www.nbcnews.com/news/asian-america/kamala-harris-laugh-criticism-trump-women-color-emotions-rcna164069",
+        "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2024-07/240729-kamala-ijbol-jg-16edcf.jpg",
+        "publishedAt": "2024-07-30T18:11:40Z",
+        "content": "Vice President Kamala Harris has been criticized for her race, gender, parental status and most recently, her laugh. \r\nWith conservatives designating her laugh as crazy, nuts and a cackle in recent w… [+4769 chars]"
+      },
+      {
+        "source": {
+          "id": "breitbart-news",
+          "name": "Breitbart News"
+        },
+        "author": "Wendell Husebø",
+        "title": "WATCH: Kamala Harris Endorsed 'Reparations' for 'Black People'",
+        "description": "Vice President Kamala Harris endorsed \"some form of reparations\" for \"black people,\" an unearthed video from 2019 reveals.",
+        "url": "https://www.breitbart.com/politics/2024/07/30/watch-kamala-harris-endorsed-reparations-black-people/",
+        "urlToImage": "https://media.breitbart.com/media/2024/07/52680356132_104ceb92ef_o-640x335.jpg",
+        "publishedAt": "2024-07-30T18:07:12Z",
+        "content": "Vice President Kamala Harris endorsed “some form of reparations” for “black people,” an unearthed video from 2019 reveals.\r\nSixty-eight percent of Americans oppose reparations, a Pew Research poll fo… [+2879 chars]"
+      },
+      {
+        "source": {
+          "id": "el-mundo",
+          "name": "El Mundo"
+        },
+        "author": null,
+        "title": "Presidente, marido y pirÃ³mano",
+        "description": "La pesadilla recurrente de Pedro SÃ¡nchez en estas noches tÃ³rridas era un gran titular en los pseudomedios: \"El presidente del Gobierno se niega a declarar ante el juez que...",
+        "url": "https://www.elmundo.es/opinion/columnistas/2024/07/30/66a9211821efa087328b458c.html",
+        "urlToImage": "https://phantom-elmundo.unidadeditorial.es/14ca2f91f8df19b1fa27d0042620559b/resize/1200/f/webp/assets/multimedia/imagenes/2024/07/30/17223601142597.jpg",
+        "publishedAt": "2024-07-30T17:22:47Z",
+        "content": "La pesadilla recurrente de Pedro SÃ¡nchez en estas noches tÃ³rridas era un gran titular en los pseudomedios: \"El presidente del Gobierno se niega a declarar ante el juez que investiga a su mujer por … [+385 chars]"
+      },
+      {
+        "source": {
+          "id": "the-hill",
+          "name": "The Hill"
+        },
+        "author": "Lauren Irwin",
+        "title": "Harris takes 4-point lead in Pennsylvania; Casey up 5 on McCormick: poll",
+        "description": "New Pennsylvania polling shows Democrats in the lead for both the presidential and Senate races in the state. According to a survey released Tuesday by Susquehanna Polling, Vice President Harris has a 4-point lead over former President Trump. Harris, who ente…",
+        "url": "https://thehill.com/homenews/campaign/4800420-harris-lead-pennsylvania-casey-mccormick-poll/",
+        "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/07/HarrisKamala_TrumpDonald.jpg?w=1280",
+        "publishedAt": "2024-07-30T17:12:53Z",
+        "content": "Skip to content\r\nNew Pennsylvania polling shows Democrats in the lead for both the presidential and Senate races in the state.\r\nAccording to a survey released Tuesday by Susquehanna Polling, Vice Pre… [+1695 chars]"
+      },
+      {
+        "source": {
+          "id": "four-four-two",
+          "name": "FourFourTwo"
+        },
+        "author": "Joe Mewis",
+        "title": "Arsenal transfer blow as rival president issues contract update",
+        "description": "Arsenal could be frustrated in their latest transfer pursuit",
+        "url": "https://www.fourfourtwo.com/news/arsenal-transfer-news-blow-as-rival-president-issues-contract-update-stories-gossip-paper-talk-signings-gossip-rumours",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/YYetFTqWsZdb7iCJz6Srt6-1200-80.jpg",
+        "publishedAt": "2024-07-30T17:00:34Z",
+        "content": "Arsenal’s transfer business stepped up a gear on Monday when the club announced the signing of Italy defender Riccardo Calafiori in a £42million signing from Bologna. \r\nThe 22-year-old is the Gunners… [+2982 chars]"
+      },
+      {
+        "source": {
+          "id": "usa-today",
+          "name": "USA Today"
+        },
+        "author": "Jonathan Limehouse",
+        "title": "Trump defends JD Vance's 'childless cat ladies' comment: 'He feels family is good'",
+        "description": "Former President Donald Trump defended running mate JD Vance's 'childless cat ladies' comment during an interview on Fox News on Monday.",
+        "url": "https://www.usatoday.com/story/news/politics/2024/07/30/donald-trump-defends-vance-childless-cat-ladies-comment/74601677007/",
+        "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2024/07/30/USAT/74602363007-20240728-t-012346-z-1994943256-rc-2-u-39-alouj-2-rtrmadp-3-usaelectiontrump.JPG?crop=3249,1828,x0,y0&width=3200&height=1801&format=pjpg&auto=webp",
+        "publishedAt": "2024-07-30T16:56:02+00:00",
+        "content": "Former President Donald Trump defended his running mate JD Vance's controversial \"childless cat ladies\" comment, saying the vice presidential nominee \"likes families.\"\r\nTrump appeared on Fox News for… [+2713 chars]"
+      },
+      {
+        "source": {
+          "id": "the-hill",
+          "name": "The Hill"
+        },
+        "author": "Caroline Vakil",
+        "title": "Progressives urge Harris to consider Beshear, Walz for VP, not Shapiro",
+        "description": "A group of progressive leaders is urging likely Democratic presidential nominee Kamala Harris to consider Minnesota Gov. Tim Walz (D) or Kentucky Gov. Andy Beshear (D) as her running mate and rule out Pennsylvania Gov. Josh Shapiro (D), as the party seeks to …",
+        "url": "https://thehill.com/homenews/campaign/4800359-kamala-harris-josh-shapiro-andy-beshear-tim-walz/",
+        "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/06/AP24128805938275-e1718102911804.jpg?w=1280",
+        "publishedAt": "2024-07-30T16:51:33Z",
+        "content": "Skip to content\r\nA group of progressive leaders is urging likely Democratic presidential nominee Kamala Harris to consider Minnesota Gov. Tim Walz (D) or Kentucky Gov. Andy Beshear (D) as her running… [+3215 chars]"
+      },
+      {
+        "source": {
+          "id": "news-com-au",
+          "name": "News.com.au"
+        },
+        "author": null,
+        "title": "Shock prediction from US election expert",
+        "description": "The “Keys to the White House” are favouring Vice President Kamala Harris in a hypothetical 2024 matchup against former President Donald Trump, but a final prediction for the 2024 race has yet to be made.",
+        "url": "https://www.news.com.au/world/north-america/us-politics/shock-prediction-from-us-election-expert-allan-lichtman/news-story/effa1ebdd05a67e4e0edf449d4f35506",
+        "urlToImage": "https://content.api.news/v3/images/bin/ef0568dbf3d5e3dd12abdc392153011a",
+        "publishedAt": "2024-07-30T16:50:00Z",
+        "content": "The “Keys to the White House” are favouring Vice President Kamala Harris in a hypothetical 2024 matchup against former President Donald Trump, but a final prediction for the 2024 race has yet to be m… [+2534 chars]"
+      },
+      {
+        "source": {
+          "id": "the-wall-street-journal",
+          "name": "The Wall Street Journal"
+        },
+        "author": "Kejal Vyas, Ryan Dubé",
+        "title": "Venezuela’s Opposition Releases Election Database; Claims Big Victory Over Strongman Maduro",
+        "description": "Detractors of President Maduro prepare more protests against alleged election fraud, while the regime doubles down with arrests of opposition activists",
+        "url": "https://www.wsj.com/world/americas/venezuelas-opposition-releases-election-database-claims-big-victory-over-strongman-maduro-fee5bc0c?mod=hp_lead_pos6",
+        "urlToImage": "https://images.wsj.net/im-985754/social",
+        "publishedAt": "2024-07-30T16:46:00Z",
+        "content": "CARACAS, VenezuelaOpponents of autocratic President Nicolás Maduro on Tuesday released a database of detailed receipts of millions of votes challenging the strongmans \r\nclaims that he won a president… [+608 chars]"
+      },
+      {
+        "source": {
+          "id": "cnn",
+          "name": "CNN"
+        },
+        "author": "Jennifer Smith",
+        "title": "Hawley has tense exchange with Secret Service official | CNN Politics",
+        "description": "Sen. Josh Hawley (R-MO) repeatedly asked Secret Service Deputy Director Ronald Rowe Jr. if anyone has been fired after the failed assassination attempt against former President Donald Trump.",
+        "url": "https://www.cnn.com/2024/07/30/politics/video/josh-hawley-secret-service-trump-shooting-digvid",
+        "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ssofficial0.jpg?c=16x9&q=w_800,c_fill",
+        "publishedAt": "2024-07-30T16:42:46.897Z",
+        "content": "Sen. Josh Hawley (R-MO) repeatedly asked Secret Service Deputy Director Ronald Rowe Jr. if anyone has been fired after the failed assassination attempt against former President Donald Trump."
+      },
+      {
+        "source": {
+          "id": "the-hill",
+          "name": "The Hill"
+        },
+        "author": "Ian Swanson",
+        "title": "Secret Service leader grilled by GOP over lack of firings for Trump security failures",
+        "description": "Acting Secret Service Director Ronald Rowe defended the agency’s failure to fire any of the agents involved in the planning and response to the assassination attempt of former President Trump, saying he did not want to “rush to judgment.” Numerous lawmakers q…",
+        "url": "https://thehill.com/homenews/senate/4800363-secret-service-defends-failure/",
+        "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/07/AP24196093296414-e1720930840295.jpg?w=1280",
+        "publishedAt": "2024-07-30T16:37:37Z",
+        "content": "Acting Secret Service Director Ronald Rowe defended the agencys failure to fire any of the agents involved in the planning and response to the assassination attempt of former President Trump, saying … [+2319 chars]"
+      },
+      {
+        "source": {
+          "id": "breitbart-news",
+          "name": "Breitbart News"
+        },
+        "author": "Wendell Husebø",
+        "title": "Report: Anonymous 'Officials' Claim Kamala Harris Flip-Flops on 4 Far-Left Policies",
+        "description": "Vice President Kamala Harris appears worried about her radical record and numerous statements on video detailing those views.",
+        "url": "https://www.breitbart.com/2024-election/2024/07/30/report-anonymous-campaign-officials-claim-kamala-harris-flip-flops-on-4-far-left-policies/",
+        "urlToImage": "https://media.breitbart.com/media/2024/07/Kamala-Harris-side-black-background-flickr-640x335.jpg",
+        "publishedAt": "2024-07-30T16:14:57Z",
+        "content": "Vice President Kamala Harris appears worried about her radical record and numerous statements on video detailing those views.\r\nCiting anonymous campaign officials, the New York Times reported Monday … [+2476 chars]"
+      }
+    ]
+  }
