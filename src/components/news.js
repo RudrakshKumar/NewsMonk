@@ -22,17 +22,15 @@ const News = (props) => {
         setLoading(true);
         props.setProgress(0);
         const apiKey = process.env.REACT_APP_API_KEY;
-        const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
-        let url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page}&pageSize=${props.pageSize}`;
+        // const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
+        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page}&pageSize=${props.pageSize}`;
         props.setProgress(25);
-        try{
-
-            let data = await fetch(url);
-        }catch(e){ console.log(e)};
+        let data = await fetch(url);
         props.setProgress(50);
         let parsedData = await data.json();
         props.setProgress(75);
         setArticles(parsedData.articles);
+        console.log(articles);
         setTotalResults(parsedData.totalResults);
         props.setProgress(100);
         setLoading(false);
@@ -42,8 +40,8 @@ const News = (props) => {
 
     const fetchMoreData = async () => {
         const apiKey = process.env.REACT_APP_API_KEY;
-        const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
-        let url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
+        // const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
+        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
         setPage(page + 1);
         let data = await fetch(url);
         let parsedData = await data.json();
