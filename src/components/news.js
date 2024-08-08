@@ -61,7 +61,7 @@ const News = (props) => {
             <div className='container my-3'>
                 <div style={{ marginTop: "80px" }}></div>
                 <div className='container d-flex justify-content-center flex-grow-1' style={{ color: "gold", fontFamily: "cursive" }}>
-                    <h3>&larr; Top {capitalizeFirstLetter(props.category)} Bulletins &rarr;</h3>
+                    <h3>&larr; {capitalizeFirstLetter(props.category)} Bulletins &rarr;</h3>
                 </div>
                 <InfiniteScroll
                     dataLength={articles.length}
