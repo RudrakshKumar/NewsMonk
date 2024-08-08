@@ -1,7 +1,7 @@
-import React, { useEffect,useState} from 'react'
-import NewsItem from './NewsItem'
+import React, { useEffect, useState } from 'react';
+import NewsItem from './NewsItem';
 import Spinner from './Spinner';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 const spinnerStyle = {
@@ -12,38 +12,40 @@ const spinnerStyle = {
     zIndex: 1000
 };
 
-const News =(props)=> {
-    
-    const [articles, setarticles] = useState([])
-    const [page, setpage] = useState(1)
-    const [totalResults, settotalResults] = useState(0)
-    const[loading,setLoading] = useState(0);
+const News = (props) => {
+    const [articles, setArticles] = useState([]);
+    const [page, setPage] = useState(1);
+    const [totalResults, setTotalResults] = useState(0);
+    const [loading, setLoading] = useState(false);
 
-    const UpdateNews = async ()=> {
-        setLoading(1);
+    const UpdateNews = async () => {
+        setLoading(true);
         props.setProgress(0);
-        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=98f030c033cc4925b44f15c560845593&nt&page=${page}&pageSize=${props.pageSize}`;
+        const apiKey = process.env.REACT_APP_API_KEY;
+        const proxy = 'https://cors-anywhere.herokuapp.com/'; // Use if needed
+        let url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page}&pageSize=${props.pageSize}`;
         props.setProgress(25);
         let data = await fetch(url);
         props.setProgress(50);
         let parsedData = await data.json();
         props.setProgress(75);
-        setarticles(parsedData.articles);
-        settotalResults(parsedData.totalResults);
+        setArticles(parsedData.articles);
+        setTotalResults(parsedData.totalResults);
         props.setProgress(100);
-        setLoading(0);
+        setLoading(false);
     }
-    
-  
-    useEffect(()=>{UpdateNews();}, [])
+
+    useEffect(() => { UpdateNews(); }, []);
 
     const fetchMoreData = async () => {
-        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=98f030c033cc4925b44f15c560845593&nt&page=${page+1}&pageSize=${props.pageSize}`
-        setpage(page+1);
+        const apiKey = process.env.REACT_APP_API_KEY;
+        const proxy = 'https://cors-anywhere.herokuapp.com/'; // Use if needed
+        let url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
+        setPage(page + 1);
         let data = await fetch(url);
         let parsedData = await data.json();
         setTimeout(() => {
-            setarticles(articles.concat(parsedData.articles))
+            setArticles(articles.concat(parsedData.articles));
         }, 500);
     };
 
@@ -51,41 +53,46 @@ const News =(props)=> {
         return word.charAt(0).toUpperCase() + word.slice(1);
     }
 
-        return (
-            <> 
-                <div className='container my-3'>
-                    
-                    <div style={{marginTop:"80px"}}></div> 
-                    <div className='container d-flex justify-content-center flex-grow-1' style={{color:"gold",fontFamily:"cursive"}}><h3>&larr; Top {capitalizeFirstLetter(props.category)} Bulletins &rarr;</h3></div>
-                    <InfiniteScroll
-                        dataLength={articles.length}
-                        next={fetchMoreData}
-                        hasMore={articles.length < totalResults -10 }
-                        loader={<Spinner/>}
-                    >
-                        <div className='container' style={spinnerStyle}>{loading && <Spinner/>}</div>
-                        <div className='container'>
-                            <div className='row'>
-                                {articles.map((element) => {
-                                     if (element.url !== "https://removed.com"){
-                                        return <div className='col-md-4' key={element.url}>
-                                            <NewsItem title={element.title ? element.title.slice(0, 80) : ""}
+    return (
+        <>
+            <div className='container my-3'>
+                <div style={{ marginTop: "80px" }}></div>
+                <div className='container d-flex justify-content-center flex-grow-1' style={{ color: "gold", fontFamily: "cursive" }}>
+                    <h3>&larr; Top {capitalizeFirstLetter(props.category)} Bulletins &rarr;</h3>
+                </div>
+                <InfiniteScroll
+                    dataLength={articles.length}
+                    next={fetchMoreData}
+                    hasMore={articles.length < totalResults - 10}
+                    loader={<Spinner />}
+                >
+                    <div className='container' style={spinnerStyle}>{loading && <Spinner />}</div>
+                    <div className='container'>
+                        <div className='row'>
+                            {articles.map((element) => {
+                                if (element.url !== "https://removed.com") {
+                                    return (
+                                        <div className='col-md-4' key={element.url}>
+                                            <NewsItem
+                                                title={element.title ? element.title.slice(0, 80) : ""}
                                                 imgurl={element.urlToImage ? element.urlToImage : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8rRXu_m5FAcZWKEyLzHBYM8KFuUfwKuLEw&s"}
                                                 newsUrl={element.url}
                                                 author={element.author}
                                                 time={element.publishedAt}
-                                                NewsAgency={element.source.name} />
+                                                NewsAgency={element.source.name}
+                                            />
                                         </div>
-                                    }
-                                })}
-                            </div>
+                                    );
+                                }
+                                return null;
+                            })}
                         </div>
-                    </InfiniteScroll>
-                </div><br />
-            </>
-        )
-    }
-
+                    </div>
+                </InfiniteScroll>
+            </div><br />
+        </>
+    )
+}
 
 News.defaultProps = {
     country: 'in',
@@ -99,4 +106,4 @@ News.propTypes = {
     category: PropTypes.string,
     NewsHeading: PropTypes.string
 }
-export default News
+export default News;
