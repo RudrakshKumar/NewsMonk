@@ -73,5 +73,5 @@ Here is the home page of the website
 
 ## Acknowledgements
 
--**React**:  A JavaScript library for building user interfaces.
--**NewsData.io**:  The API used to fetch the latest news.
+- **React**:  A JavaScript library for building user interfaces.
+- **NewsData.io**:  The API used to fetch the latest news.
