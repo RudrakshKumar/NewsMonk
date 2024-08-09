@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# React News App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based news application that fetches and displays the latest news articles. The app features infinite scrolling, allowing users to continuously load more articles as they scroll.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [Features](#features)
+- [Acknowledgements](#acknowledgements)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get started with this project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/RudrakshKumar/NewsMonk.git
+    ```
 
-### `npm test`
+2. Navigate to the project directory:
+    ```bash
+    cd NewsMonk
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+4. Create a `.env` file in the root directory and add your API key:
+    ```bash
+    REACT_APP_API_KEY=your_api_key_here
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Start the development server:
+    ```bash
+    npm run start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project requires an API key for fetching news articles. You must create a `.env` file in the root directory and add the following environment variable:
 
-### `npm run eject`
+- `REACT_APP_API_KEY`: Your API key from NewsData.io or any other news API service.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Example `.env` file:
+```env
+REACT_APP_API_KEY=your_api_key_here
+```
+ ## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After setting up the project as described above, run the following command to start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+    npm run start
+```
+The app will be available at http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Features
 
-## Learn More
+- **Latest News**: Fetches and displays the latest news articles.
+- **Infinite Scroll**: Automatically loads more articles as you scroll down.
+- -**Diversity**:  The news has diverse categories to explore.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-**React**:  A JavaScript library for building user interfaces.
+-**NewsData.io**:  The API used to fetch the latest news.
