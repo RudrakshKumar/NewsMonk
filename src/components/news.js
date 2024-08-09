@@ -73,7 +73,7 @@ const News = (props) => {
                     <div className='container'>
                         <div className='row'>
                             {articles.map((element) => {
-                                // if (element.url !== "https://removed.com") {
+                                 if (element.dupliate == "false") {
                                     return (
                                         <div className='col-md-4' key={element.url}>
                                             <NewsItem
@@ -86,7 +86,7 @@ const News = (props) => {
                                             />
                                         </div>
                                     );
-                                // }
+                                 }
                                 return null;
                             })}
                         </div>
