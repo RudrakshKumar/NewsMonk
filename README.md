@@ -8,6 +8,7 @@ This is a React-based news application that fetches and displays the latest news
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Features](#features)
+- [Screenshot](#screenshot)
 - [Acknowledgements](#acknowledgements)
 
 ## Installation
@@ -63,6 +64,12 @@ The app will be available at http://localhost:3000.
 - **Latest News**: Fetches and displays the latest news articles.
 - **Infinite Scroll**: Automatically loads more articles as you scroll down.
 - -**Diversity**:  The news has diverse categories to explore.
+
+## Screenshot
+
+Here is the home page of the website
+
+![Home Page](assets/newsmonkss.jpg)
 
 ## Acknowledgements
 
