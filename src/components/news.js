@@ -22,9 +22,7 @@ const News = (props) => {
         setLoading(true);
         props.setProgress(0);
         const apiKey = process.env.REACT_APP_API_KEY;
-        console.log(apiKey);
-        // const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
-        let url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&language=en&category=${props.category}`;
+        let url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&image=1&removeduplicate=1&language=en&category=${props.category}`;
         props.setProgress(25);
         let data = await fetch(url);
         props.setProgress(50);
@@ -41,9 +39,7 @@ const News = (props) => {
 
     const fetchMoreData = async () => {
         const apiKey = process.env.REACT_APP_API_KEY;
-        // const proxy = 'https://cors-anywhere.render.com/'; // Use if needed
-        let url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&language=en&category=${props.category}&page=${page}`;
-        console.log(url);
+        let url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&image=1&removeduplicate=1&language=en&category=${props.category}&page=${page}`;
         let data = await fetch(url);
         let parsedData = await data.json();
         setPage(parsedData.nextPage);
@@ -73,11 +69,11 @@ const News = (props) => {
                     <div className='container'>
                         <div className='row'>
                             {articles.map((element) => {
-                                 if (element.duplicate == "false") {
+                                // if (element.duplicate == "false") {
                                     return (
-                                        <div className='col-md-4' key={element.url}>
+                                        <div className='col-md-4' key={element.article_id}>
                                             <NewsItem
-                                                title={element.title ? element.title.slice(0, 80) : ""}
+                                                title={element.title ? element.title.slice(0, 80) : "Breaking News"}
                                                 imgurl={element.image_url ? element.image_url : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8rRXu_m5FAcZWKEyLzHBYM8KFuUfwKuLEw&s"}
                                                 newsUrl={element.link}
                                                 author={element.creator}
@@ -86,8 +82,8 @@ const News = (props) => {
                                             />
                                         </div>
                                     );
-                                 }
-                                return null;
+                                // }
+                                //return null;
                             })}
                         </div>
                     </div>
